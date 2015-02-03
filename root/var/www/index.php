@@ -37,7 +37,15 @@ session_start();
       <a data-ajax="false" href="wsdebug.php" data-transition="slide" class="ui-btn ui-corner-all">WebSock Debug</a>
       <a data-ajax="false" href="livechart.php" data-transition="slide" class="ui-btn ui-corner-all">Live Charts</a>
       <a data-ajax="false" href="wifi.php" data-transition="slide" class="ui-btn ui-corner-all">Wifi Settings</a>
-      <a data-ajax="false" href="ps3config.php" data-transition="slide" class="ui-btn ui-corner-all">Bluetooth PS3</a>
+<?php
+$files = glob('addons/index_*.php', GLOB_BRACE);
+foreach($files as $file) {
+  //do your work here
+  $name = substr($file, 13);
+  $name = substr($name, 0, strpos($name, '.'));
+  echo '<a data-ajax="false" href="'.$file.'" data-transition="slide" class="ui-btn ui-corner-all">'.$name.'</a>';
+}
+?>
 <div data-role="collapsible" data-collapsed="true">
 <h3>Config view</h3>
 <pre>
