@@ -24,19 +24,17 @@ install:
 		install -m 755 root/etc/init.d/S01cleanup $(DESTDIR)/etc/init.d/S01cleanup
 		install -m 755 root/etc/init.d/S02firstboot $(DESTDIR)/etc/init.d/S02firstboot
 		install -m 755 root/etc/init.d/S11modules $(DESTDIR)/etc/init.d/S11modules
-		install -m 755 root/etc/init.d/S90avrminicopter $(DESTDIR)/etc/init.d/S90avrminicopter
+		install -m 755 root/etc/init.d/S90utils $(DESTDIR)/etc/init.d/S90utils
 		install -m 755 root/usr/local/bin/mdev-debug.sh $(DESTDIR)/usr/local/bin/mdev-debug.sh
 		install -m 755 root/usr/local/bin/sixpair.sh $(DESTDIR)/usr/local/bin/sixpair.sh
 		install -m 755 root/usr/local/bin/bt.sh $(DESTDIR)/usr/local/bin/bt.sh
 		install -m 755 root/usr/local/bin/btnetup.sh $(DESTDIR)/usr/local/bin/btnetup.sh
 		install -m 755 root/usr/local/bin/btnetdown.sh $(DESTDIR)/usr/local/bin/btnetdown.sh
-		install -m 755 root/usr/local/bin/avrbaro.sh $(DESTDIR)/usr/local/bin/avrbaro.sh
 		install -m 755 root/usr/local/bin/avr.sh $(DESTDIR)/usr/local/bin/avr.sh
 		install -m 755 root/usr/local/bin/wifi.sh $(DESTDIR)/usr/local/bin/wifi.sh
 		install -m 644 root/etc/lighttpd/modules.conf $(DESTDIR)/etc/lighttpd/modules.conf
 		install -m 644 root/etc/lighttpd/conf.d/fastcgi.conf $(DESTDIR)/etc/lighttpd/conf.d/fastcgi.conf
 		cp -R root/var/www/* $(DESTDIR)/var/www/
-		cp -R root/etc/avrminicopter/* $(DESTDIR)/etc/avrminicopter/
 		install -m 644 root/firstboot $(DESTDIR)/firstboot
 		mkdir -p $(DESTDIR)/etc/dropbear
 		mkdir -p $(DESTDIR)/var/local

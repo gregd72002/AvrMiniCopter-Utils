@@ -5,12 +5,8 @@ mount /rpicopter
 /usr/local/bin/wifi.sh &
 /usr/local/bin/bt.sh
 /usr/local/bin/sixpair.sh
-
-/usr/local/bin/avrspi -d
-/usr/local/bin/avrbaro.sh & 
-/usr/local/bin/camera_server -d
-/usr/local/bin/websockify -D 8888 127.0.0.1:1030
 /usr/local/bin/avr.sh &
+
 else
 sync;sync;sync;
 fi
