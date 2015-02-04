@@ -1,4 +1,4 @@
-# utils
+# AvrMiniCopter-Utils
 
 Utilities needed by the core AvrMiniCopter system.
 
