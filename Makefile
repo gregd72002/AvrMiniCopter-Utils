@@ -10,7 +10,6 @@ install:
 		install -d $(DESTDIR)/etc/lighttpd
 		install -d $(DESTDIR)/etc/lighttpd/conf.d
 		install -d $(DESTDIR)/avr
-		install -d $(DESTDIR)/var/www
 		install -d $(DESTDIR)/
 		install -m 644 root/etc/php.ini $(DESTDIR)/etc/php.ini
 		install -m 644 root/etc/group $(DESTDIR)/etc/group
@@ -34,7 +33,6 @@ install:
 		install -m 755 root/usr/local/bin/wifi.sh $(DESTDIR)/usr/local/bin/wifi.sh
 		install -m 644 root/etc/lighttpd/modules.conf $(DESTDIR)/etc/lighttpd/modules.conf
 		install -m 644 root/etc/lighttpd/conf.d/fastcgi.conf $(DESTDIR)/etc/lighttpd/conf.d/fastcgi.conf
-		cp -R root/var/www/* $(DESTDIR)/var/www/
 		install -m 644 root/firstboot $(DESTDIR)/firstboot
 		mkdir -p $(DESTDIR)/etc/dropbear
 		mkdir -p $(DESTDIR)/var/local
