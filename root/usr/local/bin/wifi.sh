@@ -77,5 +77,7 @@ if ! $connected; then
     createAdHocNetwork
 fi
  
+iw phy phy0 set coverage 2 #distance up to 900m
+
 exit 0
 

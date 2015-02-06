@@ -24,6 +24,7 @@ install:
 		install -m 755 root/etc/init.d/S02firstboot $(DESTDIR)/etc/init.d/S02firstboot
 		install -m 755 root/etc/init.d/S11modules $(DESTDIR)/etc/init.d/S11modules
 		install -m 755 root/etc/init.d/S90utils $(DESTDIR)/etc/init.d/S90utils
+		install -m 755 root/usr/local/bin/crda.sh $(DESTDIR)/usr/local/bin/crda.sh
 		install -m 755 root/usr/local/bin/mdev-debug.sh $(DESTDIR)/usr/local/bin/mdev-debug.sh
 		install -m 755 root/usr/local/bin/sixpair.sh $(DESTDIR)/usr/local/bin/sixpair.sh
 		install -m 755 root/usr/local/bin/bt.sh $(DESTDIR)/usr/local/bin/bt.sh
