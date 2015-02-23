@@ -18,6 +18,7 @@ if [ -f "/secondboot" ]; then
 	e2fsck -f /dev/mmcblk0p3
 
 	mkdir /rpicopter
+	mount /dev/mmcblk0p3 /rpicopter
 	mkdir /rpicopter/log
 	mkdir /rpicopter/cam
 #	cp /etc/avrminicopter/* /rpicopter/
