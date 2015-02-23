@@ -51,7 +51,7 @@ echo "Scanning for known WiFi networks"
 connected=false
 
 iw phy phy0 set coverage 2 #distance up to 900m
-iw phy phy0 set txpower 3000
+iw phy phy0 set txpower fixed 3000
 
 ifconfig wlan0 up
 if iw wlan0 scan | grep $ssid > /dev/null
