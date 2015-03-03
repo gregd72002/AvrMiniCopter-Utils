@@ -32,6 +32,8 @@ install:
 		install -m 755 root/usr/local/bin/btnetdown.sh $(DESTDIR)/usr/local/bin/btnetdown.sh
 		install -m 755 root/usr/local/bin/avr.sh $(DESTDIR)/usr/local/bin/avr.sh
 		install -m 755 root/usr/local/bin/wifi.sh $(DESTDIR)/usr/local/bin/wifi.sh
+		install -m 755 root/usr/local/bin/wifi-AP.sh $(DESTDIR)/usr/local/bin/wifi-AP.sh
+		install -m 755 root/usr/local/bin/wifi-Client.sh $(DESTDIR)/usr/local/bin/wifi-Client.sh
 		install -m 644 root/etc/lighttpd/modules.conf $(DESTDIR)/etc/lighttpd/modules.conf
 		install -m 644 root/etc/lighttpd/conf.d/fastcgi.conf $(DESTDIR)/etc/lighttpd/conf.d/fastcgi.conf
 		install -m 644 root/firstboot $(DESTDIR)/firstboot
