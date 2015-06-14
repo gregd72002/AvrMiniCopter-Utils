@@ -24,6 +24,7 @@ if [ -f "/secondboot" ]; then
 	chmod 777 /rpicopter/log
 	mkdir /rpicopter/cam
 	chmod 777 /rpicopter/cam
+	chmod 777 /rpicopter/tmp
 #	cp /etc/avrminicopter/* /rpicopter/
 #	echo "/dev/mmcblk0p3       /rpicopter              ext2	async,rw,noauto         0      0" >> /etc/fstab
 	
