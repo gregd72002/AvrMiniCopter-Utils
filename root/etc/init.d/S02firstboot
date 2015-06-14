@@ -18,9 +18,12 @@ if [ -f "/secondboot" ]; then
 	e2fsck -f /dev/mmcblk0p3
 
 	mkdir /rpicopter
+	chmod 777 /rpicopter
 	mount /dev/mmcblk0p3 /rpicopter
 	mkdir /rpicopter/log
+	chmod 777 /rpicopter/log
 	mkdir /rpicopter/cam
+	chmod 777 /rpicopter/cam
 #	cp /etc/avrminicopter/* /rpicopter/
 #	echo "/dev/mmcblk0p3       /rpicopter              ext2	async,rw,noauto         0      0" >> /etc/fstab
 	
